@@ -28,49 +28,49 @@
 //  (3.) => Exo 6
 // ##  Voici un tableau : 
 
- let donnees = [14, 7 , 97, {} , "247" , 67 , 101 , true , 34 ,78 , [] ,'coding school' , 0, 11 , 32 , "italie" , 61,null,'cent',100];
+//  let donnees = [14, 7 , 97, {} , "247" , 67 , 101 , true , 34 ,78 , [] ,'coding school' , 0, 11 , 32 , "italie" , 61,null,'cent',100];
 
-// ## Triez le contenu du tableau donnees en verifiant le type de chaque donnée
-// ## Creez 4 Tableaux : 'typeString' , 'typeNumber' , 'typeObject' , 'typeAutre.
-
-
-let typeString = [];
-let typeNumber = [];
-let typeObject = [];
-let typeAutre = [];
+// // ## Triez le contenu du tableau donnees en verifiant le type de chaque donnée
+// // ## Creez 4 Tableaux : 'typeString' , 'typeNumber' , 'typeObject' , 'typeAutre.
 
 
-donnees.forEach(element => {
-    console.log(typeof element);
+// let typeString = [];
+// let typeNumber = [];
+// let typeObject = [];
+// let typeAutre = [];
 
-    if(typeof element == "string"){
-        typeString.push(element);
-    }else if(typeof element == "number"){
-        typeNumber.push(element);
-    }else if(typeof element == "object"){
-        typeObject.push(element);
-    }else{
-        typeAutre.push(element);
-    }
+
+// donnees.forEach(element => {
+//     console.log(typeof element);
+
+//     if(typeof element == "string"){
+//         typeString.push(element);
+//     }else if(typeof element == "number"){
+//         typeNumber.push(element);
+//     }else if(typeof element == "object"){
+//         typeObject.push(element);
+//     }else{
+//         typeAutre.push(element);
+//     }
     
-});
+// });
 
 
 
 
 
-// ## Videz le tableau "donnees" en redistribuant avec l'aide de condition et d'une function prédéfinie trouvée sur internet dans les bons tableaux.
+// // ## Videz le tableau "donnees" en redistribuant avec l'aide de condition et d'une function prédéfinie trouvée sur internet dans les bons tableaux.
 
-donnees.splice(0,donnees.length);
-
-
-// de l'element 0 jusqu'à la longueur de donees (donnees.length)
+// donnees.splice(0,donnees.length);
 
 
-console.log(donnees);
-console.log(typeString);
-console.log(typeObject);
-console.log(typeAutre);
+// // de l'element 0 jusqu'à la longueur de donees (donnees.length)
+
+
+// console.log(donnees);
+// console.log(typeString);
+// console.log(typeObject);
+// console.log(typeAutre);
 
 
 
@@ -78,19 +78,19 @@ console.log(typeAutre);
 // exo 4 Créer un tableau dans le quel vous devez avoir les prenoms de chaque student de la Coding School 19
 // ## A l'aide l'un foreach, affichez les prenom des studens qui commenecent par (A, F, G, I, H, L, M) en majuscule, les autres en minuscule
 
-// let classe = ["adil", "agim", "chris", "haroune", "ilias", "lira", "nasila", "stan", "mouna", "fanny", "yassine"];
+let classe = ["adil", "agim", "chris", "haroune", "ilias", "lira", "nasila", "stan", "mouna", "fanny", "yassine"];
 
-// classe.forEach(element => {
-//     console.log(object);
-// });
+classe.forEach(element => {
+    console.log(element);
+});
 
 
-// let num = 0;
+let num = 0;
 
-// while (num < 3) {
-//     console.log(num);
-//     num ++;
-// }
+while (num < 3) {
+    console.log(num);
+    num ++;
+}
 
 
 // let mdp = prompt("entrez le mdp");
