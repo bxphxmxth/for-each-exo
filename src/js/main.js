@@ -78,19 +78,19 @@
 // exo 4 Créer un tableau dans le quel vous devez avoir les prenoms de chaque student de la Coding School 19
 // ## A l'aide l'un foreach, affichez les prenom des studens qui commenecent par (A, F, G, I, H, L, M) en majuscule, les autres en minuscule
 
-let classe = ["adil", "agim", "chris", "haroune", "ilias", "lira", "nasila", "stan", "mouna", "fanny", "yassine"];
+// let classe = ["adil", "agim", "chris", "haroune", "ilias", "lira", "nasila", "stan", "mouna", "fanny", "yassine"];
 
-classe.forEach(element => {
-    console.log(element);
-});
+// classe.forEach(element => {
+//     console.log(element);
+// });
 
 
-let num = 0;
+// let num = 0;
 
-while (num < 3) {
-    console.log(num);
-    num ++;
-}
+// while (num < 3) {
+//     console.log(num);
+//     num ++;
+// }
 
 
 // let mdp = prompt("entrez le mdp");
@@ -111,9 +111,16 @@ while (num < 3) {
 
 // let compteur = 0;
 
-// while (nbr >= 5 compteur){
-//     console.log(compteur ++); 
+// while (nbr >= compteur){
+    
+    //  console.log(compteur); 
+   
+    // compteur ++;
 // }
+
+
+
+
 
 // - # Exo 2 Boucles WHILE
 //     - ## Créez une variable classe avec un array
@@ -124,16 +131,18 @@ while (num < 3) {
 
 // let classe = [];
 
-// let nbrEleves = prompt("Choisis un nombre d'élèves");
+// let nomEleve;
 
-// while (classe !== nbrEleves ) {
-//     classe.push(nbrEleves);
-//     // nbrEleves ++;
+// let nbMax = prompt("nombre max d'élèves?");
+
+
+// while (classe.length < nbMax){
+//     nomEleve = prompt("entrez un nom d'eleve");
+//     classe.push(nomEleve);
+    
 // }
-
 // console.log(classe);
-
-
+// alert("le nombre d'élèves est suffisant");
 
 
 // - ##  Ex 03
@@ -148,14 +157,11 @@ while (num < 3) {
 
 // while ( i < 9); {
 //     console.log("Bonjour " + tab[i]);
-
+//     i++;
 // }
 
 
-// while (nbr > compteur){
-//     console.log(nbr);
-//     compteur ++;
-// }
+
 
 
 
@@ -167,11 +173,12 @@ while (num < 3) {
 
 // let fruits = ["orange", "pomme", "kumquat", "poire", "kaki", "nefle"];
 
-// while (fruits.length >= 6){
+// while (fruits.length > 0){
 //     fruits.shift();
+//     console.log(fruits);
+
 // }
 
-// console.log(panier);
 
 
 
@@ -184,23 +191,30 @@ while (num < 3) {
 
 
 
-// let panierLegumes = ["pourpier", "topinambour", "epinards", "cresson"];
-// let longueur = panierLegumes.length
-// let caisseLegumes = [];
+let panierLegumes = ["pourpier", "topinambour", "epinards", "cresson"];
+let longueur = panierLegumes.length-1; 
+let caisseLegumes = [];
 
-// while (panierLegumes.length >= 4) {
-//     caisseLegumes.push(panierLegumes[0]);
-// }
+while (longueur >= 0){
+    caisseLegumes.push(panierLegumes[longueur]);
+    panierLegumes.pop();
+    console.log(panierLegumes);
+    console.log(caisseLegumes);
+    longueur--;
+
+}
+
 
 
 
 // - ##  Exo 6 oki
 //     ##  Préparer une énigme, et faites une boucle WHILE qui va vérifier si l'utilisateur répond correctement à l'énigme via un prompt, tant qu'il se trompe, vous lui reposer la question. S'il a juste, faites une alerte qui le félicite
 
-// let rep = prompt("qu'est-ce qui est jaune et qui attend?");
+let rep = prompt("qu'est-ce qui est jaune et qui attend?").toLowerCase();
 
-// while (rep !== "jonathan") {
-//     rep = prompt("réessaye");
-// }
+while (rep !== "jonathan") {
+    rep = prompt("réessaye").toLowerCase();
+}
 
-// alert("Yes, tu connais les bails");
+alert("Yes, tu connais les bails");
+
